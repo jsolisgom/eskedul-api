@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name', 255);
             $table->longText('description');
             $table->double('price');
-            $table->boolean('isEnabled');
+            $table->boolean('is_enabled');
             $table->foreignId('category_id')->constrained();
             $table->timestamps();
         });
